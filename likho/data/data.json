@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "Ram",
+      "author": "god",
+      "body": "hare ram hare krishna,krishna krishna hare hare",
+      "id": 1
+    },
+    {
+      "title": "moon night",
+      "author": "hrishabh",
+      "body": "moon has played so many roles .sometimes its peace,love ,etc",
+      "id": 4
+    },
+    {
+      "title": "Best or waste",
+      "author": "hrk",
+      "body": "this is a autobiography",
+      "id": 6
+    }
+  ]
+}
