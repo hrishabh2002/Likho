@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hov-effect{
+    @apply hover:border-b-4 border-primary;
+}

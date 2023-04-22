@@ -9,7 +9,7 @@ import { BrowserRouter, Route,Routes} from 'react-router-dom';
 function App() {
 
   return (
-    <div className='container'>
+    <div className='max-w-3xl m-auto'>
       <BrowserRouter>
       <Navbar/>
       <Routes>

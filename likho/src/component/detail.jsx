@@ -28,12 +28,12 @@ const Details=()=>{
                 <h1>{error}</h1>
                 :
                 <div>
-                    <h1>{blogs.title}</h1>
-                    <p>{blogs.author}</p>
-                    <article>{blogs.body}</article>
+                    <h1 className="font-semibold">{blogs.title}</h1>
+                    <p className="text-gray-500">-{blogs.author}</p>
+                    <article className="my-6">{blogs.body}</article>
                 </div>
             }
-            <Button onClick={handleClick}>Delete</Button>
+            <p className="font-medium text-gray-500 hover:text-gray-700 my-8" onClick={handleClick}>Delete</p>
         </div>
     )
 }

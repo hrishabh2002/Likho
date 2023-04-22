@@ -30,9 +30,9 @@ function create() {
     }
 
   return (
-    <div form-component>
-        <h3>Create a new Blog</h3>
-        <form from-box onSubmit={handleSubmit}>
+    <div form-component >
+        <h3 className='font-semibold text-lg my-6'>Create a new Blog</h3>
+        <form from-box onSubmit={handleSubmit} className='border-2 border-gray-500 flex justify-center'>
             <label>Blog title</label>
             <input type="text" required onChange={(e)=>setTitle(e.target.value)} value={title}></input>
             <label>Author</label>
