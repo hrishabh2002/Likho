@@ -1,6 +1,7 @@
 import { Button } from '@mui/material'
 import React, { useState} from 'react'
 import { useNavigate } from 'react-router-dom'
+import { v4 as uuid } from 'uuid';
 
 function create() {
     const [title,setTitle]=useState('')
@@ -9,9 +10,12 @@ function create() {
     const [adding,setAdding]=useState(false)
 
     const history =useNavigate();
+
     const handleSubmit=(e)=>{
         e.preventDefault();
         const blogs={title,author,body}
+        const id=uuid().slice(0,5);
+        blogs.uid=id;
          setAdding(true);
         fetch('http://localhost:8000/blogs',{
             method:'POST',
