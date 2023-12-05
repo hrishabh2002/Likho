@@ -2,6 +2,7 @@ import { Button } from '@mui/material'
 import React, { useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 import { v4 as uuid } from 'uuid';
+import { url } from '../url';
 
 function create() {
     const [title,setTitle]=useState('')
@@ -17,7 +18,7 @@ function create() {
         const id=uuid().slice(0,5);
         blogs.uid=id;
          setAdding(true);
-        fetch('http://localhost:8000/blogs',{
+        fetch(`${url}/blogs`,{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
