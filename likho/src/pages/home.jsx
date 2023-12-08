@@ -2,11 +2,11 @@
 import {React} from 'react'
 import {useFetch} from '../component/usefetch'
 import { Link } from 'react-router-dom'
-
+import { url } from '../url'
 
 function home() {
    //custom hook for fetching data is used
-    const {blogs:data,loading,error}=useFetch('http://localhost:8000/blogs')
+    const {blogs:data,loading,error}=useFetch(`${url}/blogs`)
 
 
   return (
